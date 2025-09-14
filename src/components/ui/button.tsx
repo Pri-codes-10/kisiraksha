@@ -9,14 +9,15 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary-light shadow-natural",
+        default: "bg-primary text-primary-foreground hover:bg-primary-light shadow-natural transition-all duration-300 hover:shadow-glow",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-primary-foreground",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary-light shadow-natural",
-        ghost: "hover:bg-accent/20 hover:text-accent-foreground",
+        outline: "border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:shadow-glow",
+        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary-light shadow-natural transition-all duration-300",
+        ghost: "hover:bg-accent/20 hover:text-accent-foreground transition-all duration-300",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-gradient-hero text-primary-foreground hover:bg-primary-light shadow-warm text-lg font-semibold",
-        accent: "bg-gradient-sunset text-accent-foreground hover:bg-accent-light shadow-warm",
+        hero: "bg-gradient-futuristic text-primary-foreground hover:shadow-tech shadow-warm text-lg font-semibold transition-all duration-300 hover:scale-105",
+        accent: "bg-gradient-sunset text-accent-foreground hover:bg-accent-light shadow-warm transition-all duration-300 hover:shadow-glow",
+        tech: "bg-gradient-tech text-primary-foreground hover:shadow-glow shadow-tech transition-all duration-300 hover:scale-105",
       },
       size: {
         default: "h-10 px-4 py-2",
