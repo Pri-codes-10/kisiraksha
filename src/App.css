@@ -17,14 +17,20 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+
+/* THEME VARIABLES */
 :root {
   --bg-color: #ffffff;
   --text-color: #000000;
+  --card-bg: #f9f9f9;
+  --docs-text: #888;
 }
 
 [data-theme="dark"] {
   --bg-color: #121212;
   --text-color: #ffffff;
+  --card-bg: #1e1e1e;
+  --docs-text: #aaaaaa;
 }
 
 body {
@@ -32,7 +38,6 @@ body {
   color: var(--text-color);
   transition: background 0.3s ease, color 0.3s ease;
 }
-
 
 @keyframes logo-spin {
   from {
@@ -51,8 +56,12 @@ body {
 
 .card {
   padding: 2em;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  transition: background 0.3s ease;
 }
 
 .read-the-docs {
-  color: #888;
+  color: var(--docs-text);
+  transition: color 0.3s ease;
 }
