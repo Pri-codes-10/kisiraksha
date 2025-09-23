@@ -5,25 +5,29 @@ import { QueryInput } from "@/components/QueryInput";
 import { WeatherWidget } from "@/components/WeatherWidget";
 import { FeatureCard } from "@/components/FeatureCard";
 import heroImage from "@/assets/hero-farming.jpg";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b border-border bg-card/50 backdrop-blur-md sticky top-0 z-50 shadow-tech">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3 animate-fade-in">
-            <div className="p-2 rounded-lg bg-gradient-futuristic shadow-glow animate-glow-pulse">
-              <Shield className="h-6 w-6 text-primary-foreground" />
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-foreground">KisaRaksha</h1>
-              <p className="text-sm text-muted-foreground">AI-Powered Crop Protection</p>
-            </div>
-          </div>
-          <LanguageSelector />
-        </div>
-      </header>
+     <header className="border-b border-border bg-card/50 backdrop-blur-md sticky top-0 z-50 shadow-tech">
+  <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+    <div className="flex items-center gap-3 animate-fade-in">
+      <div className="p-2 rounded-lg bg-gradient-futuristic shadow-glow animate-glow-pulse">
+        <Shield className="h-6 w-6 text-primary-foreground" />
+      </div>
+      <div>
+        <h1 className="text-xl font-bold text-foreground">KisaRaksha</h1>
+        <p className="text-sm text-muted-foreground">AI-Powered Crop Protection</p>
+      </div>
+    </div>
+    <div className="flex items-center gap-4">
+      <LanguageSelector />
+      <ThemeToggle />
+    </div>
+  </div>
+</header>
 
       {/* Hero Section */}
       <section className="relative py-20 px-4 overflow-hidden">
